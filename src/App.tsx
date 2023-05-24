@@ -4,13 +4,13 @@ import { useMediaQuery } from 'react-responsive'
 import { Link, Typography, Grid } from '@mui/material';
 
 
-const ramblersLogo = process.env.REACT_APP_RAMBLERSTOWN_LOGO
-const CropLeo = process.env.REACT_APP_CROP_LEO
-const CropJoss = process.env.REACT_APP_CROP_JOSS
-const CropEddie = process.env.REACT_APP_CROP_EDDIE
-const CropAdrian = process.env.REACT_APP_CROP_ADRIAN
-const CropSergio = process.env.REACT_APP_CROP_SERGIO
-const CollageRamblers = process.env.REACT_APP_COLLAGE_RAMBLERS
+const ramblersLogo = process.env.REACT_APP_RAMBLERSTOWN_LOGO || ''
+const CropLeo = process.env.REACT_APP_CROP_LEO || ''
+const CropJoss = process.env.REACT_APP_CROP_JOSS || ''
+const CropEddie = process.env.REACT_APP_CROP_EDDIE || ''
+const CropAdrian = process.env.REACT_APP_CROP_ADRIAN || ''
+const CropSergio = process.env.REACT_APP_CROP_SERGIO || ''
+const CollageRamblers = process.env.REACT_APP_COLLAGE_RAMBLERS || ''
 
 function App() {
   const isBigScreen = useMediaQuery({ minWidth: 1224 })
