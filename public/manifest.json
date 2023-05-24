@@ -1,19 +1,19 @@
 {
-  "short_name": "Ramblers Town",
-  "name": "Ramblers Town Band",
+  "short_name": "React App",
+  "name": "Create React App Sample",
   "icons": [
     {
-      "src": "ramblersLogo.ico",
+      "src": "favicon.ico",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "ramblersLogo.png",
+      "src": "logo192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "ramblersLogo.png",
+      "src": "logo512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
