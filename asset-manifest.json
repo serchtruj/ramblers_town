@@ -1,16 +1,15 @@
 {
   "files": {
-    "main.css": "/ramblers_town/static/css/main.073c9b0a.css",
-    "main.js": "/ramblers_town/static/js/main.ded2adaf.js",
+    "main.css": "/ramblers_town/static/css/main.96c21f54.css",
+    "main.js": "/ramblers_town/static/js/main.19130c23.js",
     "static/js/787.3073a0a2.chunk.js": "/ramblers_town/static/js/787.3073a0a2.chunk.js",
-    "static/media/logo.svg": "/ramblers_town/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/ramblers_town/index.html",
-    "main.073c9b0a.css.map": "/ramblers_town/static/css/main.073c9b0a.css.map",
-    "main.ded2adaf.js.map": "/ramblers_town/static/js/main.ded2adaf.js.map",
+    "main.96c21f54.css.map": "/ramblers_town/static/css/main.96c21f54.css.map",
+    "main.19130c23.js.map": "/ramblers_town/static/js/main.19130c23.js.map",
     "787.3073a0a2.chunk.js.map": "/ramblers_town/static/js/787.3073a0a2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.ded2adaf.js"
+    "static/css/main.96c21f54.css",
+    "static/js/main.19130c23.js"
   ]
 }
