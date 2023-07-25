@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/ramblers_town/static/css/main.96c21f54.css",
-    "main.js": "/ramblers_town/static/js/main.a101d978.js",
+    "main.css": "/ramblers_town/static/css/main.5771227d.css",
+    "main.js": "/ramblers_town/static/js/main.4c1c24bd.js",
     "static/js/787.3073a0a2.chunk.js": "/ramblers_town/static/js/787.3073a0a2.chunk.js",
     "index.html": "/ramblers_town/index.html",
-    "main.96c21f54.css.map": "/ramblers_town/static/css/main.96c21f54.css.map",
-    "main.a101d978.js.map": "/ramblers_town/static/js/main.a101d978.js.map",
+    "main.5771227d.css.map": "/ramblers_town/static/css/main.5771227d.css.map",
+    "main.4c1c24bd.js.map": "/ramblers_town/static/js/main.4c1c24bd.js.map",
     "787.3073a0a2.chunk.js.map": "/ramblers_town/static/js/787.3073a0a2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.96c21f54.css",
-    "static/js/main.a101d978.js"
+    "static/css/main.5771227d.css",
+    "static/js/main.4c1c24bd.js"
   ]
 }
