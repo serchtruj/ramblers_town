@@ -1,7 +1,16 @@
 .social-media {
     color: black;
+    padding: 10px;
+    transition-property: transform;
+    transition-duration: 0.3s;
 }
 
-.social-media-container{
+.social-media:hover {
+    padding: 10px;
+    transform: scale(1.4);
+}
 
+.social-media-container svg {
+    transition-property: transform;
+    transition-duration: 0.3s;
 }

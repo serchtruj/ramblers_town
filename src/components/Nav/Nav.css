@@ -1,0 +1,10 @@
+.navbar-btn button {
+    color: black;
+    padding: 10px;
+    margin-right: 5px;
+}
+
+.navbar-btn button:hover {
+    color: white;
+    background-color: black;
+}
