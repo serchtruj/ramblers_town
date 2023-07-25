@@ -1,7 +1,7 @@
 {
   "name": "ramblers_town",
   "version": "0.1.0",
-  "homepage": "https://serchtruj.github.io/ramblers_town",
+  "homepage": "http://www.ramblerstown.band/",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.6",
