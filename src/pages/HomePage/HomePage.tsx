@@ -1,6 +1,5 @@
 import { Link, Typography, Grid } from '@mui/material';
-import { SocialMedia } from '../../components';
-import ImageBgSection from '../../components/Image Bg Section/ImageBgSection';
+import { SocialMedia, ImageBgSection } from '../../components';
 
 const ramblersLogo = process.env.REACT_APP_RAMBLERSTOWN_LOGO || ''
 const CropLeo = process.env.REACT_APP_CROP_LEO || ''
