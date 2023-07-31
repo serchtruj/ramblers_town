@@ -1,6 +1,6 @@
-import { useMediaQuery } from 'react-responsive'
 import { Link, Typography, Grid } from '@mui/material';
 import { SocialMedia } from '../../components';
+import ImageBgSection from '../../components/Image Bg Section/ImageBgSection';
 
 const ramblersLogo = process.env.REACT_APP_RAMBLERSTOWN_LOGO || ''
 const CropLeo = process.env.REACT_APP_CROP_LEO || ''
@@ -11,10 +11,6 @@ const CropSergio = process.env.REACT_APP_CROP_SERGIO || ''
 const CollageRamblers = process.env.REACT_APP_COLLAGE_RAMBLERS || ''
 
 export default function HomePage() {
-    const isBigScreen = useMediaQuery({ minWidth: 1224 })
-    const isTablet = useMediaQuery({ maxWidth: 1224, minWidth: 600 })
-    const isMobile = useMediaQuery({ maxWidth: 600 })
-
     const logoSrc = ramblersLogo;
     const bigScreenWidth = 700;
     const bigScreenHeight = 550;
@@ -27,48 +23,26 @@ export default function HomePage() {
 
     const imagesStyle = { marginBottom: '10px', boxShadow: '3px 3px 3px 3px #010101' }
 
-    const ImagesCropMobile = () => {
-        return (
-            <Grid container justifyContent='center'>
-                {cropImages.map(item => {
-                    return (
-                        <img
-                            key={item}
-                            src={item}
-                            alt={item}
-                            width='90%'
-                            style={imagesStyle}
-                        />)
-                })}
-            </Grid>
-        )
-    }
+    const logoImages = [
+        { props: { width: bigScreenWidth, height: bigScreenHeight }, type: "web" as const },
+        { props: { width: tabletWidth, height: tabletHeight }, type: "tablet" as const },
+        { props: { width: mobileWidth, height: mobileHeight }, type: "mobile" as const },
+    ];
+
+    const collageImages = [
+        { props: { width: 1200, style: imagesStyle }, type: "web" as const },
+        { props: { width: 700, style: imagesStyle }, type: "tablet" as const },
+    ];
+
+    const cropImagesData = [
+        { props: { width: '90%', style: imagesStyle }, type: "mobile" as const }
+    ];
 
     return (
         <>
             <Grid item md={12}>
                 <Link href="#" >
-                    {isBigScreen && (
-                        <img
-                            src={logoSrc}
-                            width={bigScreenWidth}
-                            height={bigScreenHeight}
-                            alt={logoSrc} />
-                    )}
-                    {isTablet && (
-                        <img
-                            src={logoSrc}
-                            width={tabletWidth}
-                            height={tabletHeight}
-                            alt={logoSrc} />
-                    )}
-                    {isMobile && (
-                        <img
-                            src={logoSrc}
-                            width={mobileWidth}
-                            height={mobileHeight}
-                            alt={logoSrc} />
-                    )}
+                    <ImageBgSection imageSrc={logoSrc} components={logoImages} />
                 </Link>
             </Grid>
             <Grid item md={12} container justifyContent="center">
@@ -78,24 +52,12 @@ export default function HomePage() {
             </Grid>
             <SocialMedia />
             <Grid item md={12}>
-                {isBigScreen && (
-                    <img
-                        src={CollageRamblers}
-                        alt={CollageRamblers}
-                        width={1200}
-
-                        style={imagesStyle}
-                    />
-                )}
-                {isTablet && (
-                    <img
-                        src={CollageRamblers}
-                        alt={CollageRamblers}
-                        width={700}
-                        style={imagesStyle}
-                    />
-                )}
-                {isMobile && <ImagesCropMobile />}
+                <ImageBgSection imageSrc={CollageRamblers} components={collageImages} />
+                <Grid container justifyContent='center'>
+                    {cropImages.map(item => {
+                        return (<ImageBgSection imageSrc={item} components={cropImagesData} />)
+                    })}
+                </Grid>
             </Grid>
         </>
     )
