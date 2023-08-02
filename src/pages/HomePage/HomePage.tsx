@@ -1,5 +1,5 @@
 import { Link, Typography, Grid } from '@mui/material';
-import { SocialMedia, ImageBgSection } from '../../components';
+import { SocialMedia, ImageBgSection } from '../../components/index';
 
 const ramblersLogo = process.env.REACT_APP_RAMBLERSTOWN_LOGO || ''
 const CropLeo = process.env.REACT_APP_CROP_LEO || ''
@@ -49,7 +49,7 @@ export default function HomePage() {
                     Una banda de rock clasico con un toque de jazz y blues.
                 </Typography>
             </Grid>
-            <SocialMedia />
+            <SocialMedia color="black" />
             <Grid item md={12}>
                 <ImageBgSection imageSrc={CollageRamblers} components={collageImages} />
                 <Grid container justifyContent='center'>
