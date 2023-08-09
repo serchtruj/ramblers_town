@@ -46,7 +46,7 @@ function Navigation(props: Props) {
       <Divider />
       <List>
         {navItems.map((item) => (
-          <ListItem key={item.value} disablePadding>
+          <ListItem key={item.value} disablePadding className='nav-mobile-items'>
             <ListItemButton sx={{ textAlign: 'center' }}>
               <Link target="_blank" style={{ color: 'black', textDecoration: 'none' }} href={item.type === 'email' ? `mailto:ramblerstown@gmail.com` : url} key={item.value}>
                 <ListItemText primary={item.value} />

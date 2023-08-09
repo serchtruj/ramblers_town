@@ -8,3 +8,13 @@
     color: white;
     background-color: black;
 }
+
+.nav-mobile-items span {
+    font-weight: 700;
+}
+
+.nav-mobile-items:hover,
+.nav-mobile-items span:hover {
+    background-color: black;
+    color: #ffffff;
+}
