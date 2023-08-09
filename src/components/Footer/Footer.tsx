@@ -9,7 +9,7 @@ export default function Footer() {
     return (
         <div className="footer-container">
             <div className="footer-info-container">
-                <ul className='footer-info'>
+                <ul className='footer-info band-info'>
                     <li>
                         <h4>Banda</h4>
                     </li>
@@ -24,7 +24,7 @@ export default function Footer() {
                         </p>
                     </li>
                 </ul>
-                <ul className='footer-info'>
+                <ul className='footer-info genres-info'>
                     <li>
                         <h4>Generos</h4>
                     </li>
@@ -37,7 +37,7 @@ export default function Footer() {
                     </li>
 
                 </ul>
-                <ul className='footer-info'>
+                <ul className='footer-info social-info'>
                     <li>
                         <h4>Siguenos</h4>
                     </li>
@@ -47,8 +47,11 @@ export default function Footer() {
                 </ul>
             </div>
             <div className="footer-info-rights">
-                <p>©2023 Ramblers Town | Todos los derechos Reservados | Creado por: </p>
-                <a href='https://github.com/serchtruj' target="_blank">Sergio Trujillo</a>
+                <p>
+                    ©2023 Ramblers Town | Todos los derechos Reservados | Creado por:
+                    <a href='https://github.com/serchtruj' target="_blank">Sergio Trujillo</a>
+                </p>
+
             </div>
         </div>
     )
